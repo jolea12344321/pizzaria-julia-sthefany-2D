@@ -12,10 +12,10 @@
         <form>
             <h3>𝚅𝚎𝚗𝚑𝚊 𝚊𝚙𝚛𝚘𝚟𝚎𝚒𝚝𝚊𝚛 𝚊𝚜 𝚘𝚙𝚘𝚛𝚝𝚞𝚗𝚒𝚍𝚊𝚍𝚎𝚜, 𝚏𝚊𝚌̧𝚊 𝚜𝚎𝚞 𝚌𝚊𝚍𝚊𝚜𝚝𝚛𝚘!</h3>
             
-            <input type="text" placeholder="Nome de usuário" id="Nome de usuário">
-            <input type="password" placeholder="Endereço" id="Endereço">
-            <input type="email" placeholder="Telefone" id="Telefone">
-            <input type="tel" placeholder="Cardápio" id="Cardápio">
+            <input type="text" placeholder="Login" id="login">
+            <input type="password" placeholder="Senha" id="senha">
+            <input type="email" placeholder="Email" id="email">
+            <input type="tel" placeholder="Telefone" id="telefone">
             
             <input type="submit" value="Cadastrar" onclick="LOGAR(); return false;">
         </form>
@@ -23,16 +23,17 @@
 
     <script>
         function LOGAR() {
-            var Nomedeusuário= document.getElementById("Nome de usuário").value;
-            var Endereço = document.getElementById("Endereço").value;
+            var login = document.getElementById("login").value;
+            var senha = document.getElementById("senha").value;
 
-            if(Nomedousuário == "Ju" && Endereço == "guido") {
+            if(login == "admin" && senha == "123") {
                 alert("Cadastro realizado com sucesso!");
                 location.href = "home.html";  // Redireciona para a página home.html
             } else {
-                alert("nome de usuário ou endereço não encontrado");
+                alert("Usuário ou senha incorretos!");
             }
         }
+    </script>
     </script>
 </body>
 </html>

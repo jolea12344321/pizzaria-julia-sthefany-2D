@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijugi 3</title>
+    <link rel="stylesheet" href="./pizzaria.css">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <h3>𝚅𝚎𝚗𝚑𝚊 𝚊𝚙𝚛𝚘𝚟𝚎𝚒𝚝𝚊𝚛 𝚊𝚜 𝚘𝚙𝚘𝚛𝚝𝚞𝚗𝚒𝚍𝚊𝚍𝚎𝚜, 𝚏𝚊𝚌̧𝚊 𝚜𝚎𝚞 𝚌𝚊𝚍𝚊𝚜𝚝𝚛𝚘!</h3>
+            
+            <input type="text" placeholder="Nome de usuário" id="Nome de usuário">
+            <input type="password" placeholder="Endereço" id="Endereço">
+            <input type="email" placeholder="Telefone" id="Telefone">
+            <input type="tel" placeholder="Cardápio" id="Cardápio">
+            
+            <input type="submit" value="Cadastrar" onclick="LOGAR(); return false;">
+        </form>
+    </div>
+
+    <script>
+        function LOGAR() {
+            var Nomedeusuário= document.getElementById("Nome de usuário").value;
+            var Endereço = document.getElementById("Endereço").value;
+
+            if(Nomedousuário == "Ju" && Endereço == "guido") {
+                alert("Cadastro realizado com sucesso!");
+                location.href = "home.html";  // Redireciona para a página home.html
+            } else {
+                alert("nome de usuário ou endereço não encontrado");
+            }
+        }
+    </script>
+</body>
+</html>
